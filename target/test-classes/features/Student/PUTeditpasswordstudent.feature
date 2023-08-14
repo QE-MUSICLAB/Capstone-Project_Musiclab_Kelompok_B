@@ -35,3 +35,21 @@ Feature: Edit Password student
         Then Status code should be 400 Bad Request
         And Validate respon body message "old password, new password and confirmation password field cannot be empty"
         And Validate message Json schemas
+
+       @Tugas
+       Scenario: Edit student passwotd with empty confirmation password
+         Given User login student with account
+         When edit student password with empty confirmation password on request body
+         And request for empty confirmation password
+         Then Status code should be 400 Bad Request
+         And Validate respon body message "old password, new password and confirmation password field cannot be empty"
+         And Validate message confirmation Json schema
+
+  @Tugas
+  Scenario: Edit student passwotd with empty request body
+    Given User login student with account
+    When edit student password with empty request body
+    And request for empty request body
+    Then Status code should be 400 Bad Request
+    And Validate respon body message "old password, new password and confirmation password field cannot be empty"
+    And Validate message empty request body JSON Schema

@@ -76,4 +76,32 @@ public class PUTeditPasswordStudent {
     @And("request for empty new password")
     public void requestForEmptyNewPassword() {SerenityRest.when().put(StudentAPI.PUT_EDIT_STUDENT_PASSWORD);
     }
+// confirmation password
+    @When("edit student password with empty confirmation password on request body")
+    public void editStudentPasswordWithEmptyConfirmationPasswordOnRequestBody() {File json = new File(Constants.REQ_BODY_STUDENT+"/PUTeditemptyconfirmationpasswordstudent.json");
+        studentAPI.puteditstudentprofile(json);
+    }
+
+    @And("request for empty confirmation password")
+    public void requestForEmptyConfirmationPassword() {SerenityRest.when().put(StudentAPI.PUT_EDIT_STUDENT_PASSWORD);
+    }
+
+    @And("Validate message confirmation Json schema")
+    public void validateMessageConfirmationJsonSchema() {File json = new File(Constants.JSON_SCHEMA+"PUTeditemptyconfirmationpasswordJSONSchema.json");
+        SerenityRest.and().body(JsonSchemaValidator.matchesJsonSchema(json));
+    }
+// empty request body
+    @When("edit student password with empty request body")
+    public void editStudentPasswordWithEmptyRequestBody() {File json = new File(Constants.REQ_BODY_STUDENT+"/PUTeditemptyrequestbodypassword.json");
+     studentAPI.puteditstudentprofile(json);
+    }
+
+    @And("request for empty request body")
+    public void requestForEmptyRequestBody() {SerenityRest.when().put(StudentAPI.PUT_EDIT_STUDENT_PASSWORD);
+    }
+
+    @And("Validate message empty request body JSON Schema")
+    public void validateMessageEmptyRequestBodyJSONSchema() {File json = new File(Constants.JSON_SCHEMA+"PUTeditemptybodyJSONSchema.json");
+        SerenityRest.and().body(JsonSchemaValidator.matchesJsonSchema(json));
+    }
 }

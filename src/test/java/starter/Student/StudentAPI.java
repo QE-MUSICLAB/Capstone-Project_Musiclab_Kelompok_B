@@ -17,6 +17,8 @@ public class StudentAPI {
     public static String PUT_EDIT_STUDENT_PROFILE_EMPTY_NAME = URL+"students";
     public static String PUT_EDIT_STUDENT_PROFIE_INVALID_PARAMS = URL+"studentsss";
     public static String PUT_EDIT_STUDENT_PASSWORD = URL+"students/password";
+    public static String DELETE_STUDENT_WITH_VALID_PATH = URL+"students";
+    public static String DELETE_STUDENT_WITH_INVALID_PATH = URL+"studentssss";
 
 
     @Step("Put edit student profile")
