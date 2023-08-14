@@ -2,10 +2,12 @@ package starter.Utils;
 
 public class Constants {
     public static  String DIR = System.getProperty("user.dir");
-    public static final String JSON_SCHEMA = DIR + "/src/test/resources/JSON/JSONSchema/";
+    public static final String JSON_SCHEMA = DIR + "/src/test/resources/JSON/JSONSchema/Student/";
+    public static final String JSON_SCHEMA_GENRE = DIR + "/src/test/resources/JSON/JSONSchema/Genre/";
     public static String JSON = DIR +"/src/test/resources/JSON";
     public static String REQ_BODY_AUTH = JSON+"/ReqBody/Auth";
     public static String REQ_BODY_STUDENT = JSON +"/ReqBody/Student";
+    public static String REQ_BODY_GENRE = JSON +"/ReqBody/Genre";
 
 
 
