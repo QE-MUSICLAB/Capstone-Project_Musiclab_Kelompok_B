@@ -14,7 +14,7 @@ import java.io.File;
 import static org.hamcrest.Matchers.equalTo;
 
 
-public class StudentStepDef {
+public class GETStudentStepDef {
 
     @Steps
     StudentAPI studentAPI;
@@ -79,4 +79,5 @@ public class StudentStepDef {
         File json = new File(Constants.JSON_SCHEMA+"GETJSONSchemainvalidParams.json");
         SerenityRest.and().body(JsonSchemaValidator.matchesJsonSchema(json));
     }
+
 }

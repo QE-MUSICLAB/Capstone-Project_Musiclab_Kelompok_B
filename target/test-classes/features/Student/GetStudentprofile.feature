@@ -1,6 +1,6 @@
 Feature: Get Studen Profile
 
-  @Tugas
+  @Tugas @positivecase
   Scenario: Get show student profile with valid id
     Given User login student with account
     When show student profile with valid params
@@ -9,6 +9,7 @@ Feature: Get Studen Profile
     And Validate response body for message should be "success show student profile"
     And Validate get student profile JSON Schema
 
+@Tugas @Negativecase
   Scenario: Get show student profile with invalid Method
     Given User login student with account
     When show student profile with invalid method
@@ -17,6 +18,7 @@ Feature: Get Studen Profile
     And Validate response invalid method body for message should be "Method Not Allowed"
     And Validate get student profile invalid method JSON Schema
 
+@Tugas @Negativecase
   Scenario: Get show studen profile with invalid params
     Given User login student with account
     When show student profile with invalid params

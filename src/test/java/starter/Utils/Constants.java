@@ -5,6 +5,7 @@ public class Constants {
     public static final String JSON_SCHEMA = DIR + "/src/test/resources/JSON/JSONSchema/";
     public static String JSON = DIR +"/src/test/resources/JSON";
     public static String REQ_BODY_AUTH = JSON+"/ReqBody/Auth";
+    public static String REQ_BODY_STUDENT = JSON +"/ReqBody/Student";
 
 
 
