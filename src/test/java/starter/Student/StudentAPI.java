@@ -8,6 +8,8 @@ import static starter.Utils.Constants.URL;
 
 public class StudentAPI {
     public static String GET_STUDENT_VALID =URL+ "students/profile";
+    public static String GET_STUDENT_INVALID =URL+ "students";
+    public static String GET_STUDENT_INVALID_PARAMS =URL+ "students/profile/id?id=1";
 
 
     @Step("Get all students")
