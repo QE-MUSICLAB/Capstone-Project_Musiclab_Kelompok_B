@@ -6,5 +6,7 @@ Feature: Get Studen Profile
     When show student profile with valid params
     And request for show student profile with valid params
     Then Status code should be 200 OK
-#    And Validate response body for message should be "succes show student profile"
-#    And Validate get student profile JSON Schema
+    And Validate response body for message should be "success show student profile"
+    And Validate get student profile JSON Schema
+
+    Scenario:
