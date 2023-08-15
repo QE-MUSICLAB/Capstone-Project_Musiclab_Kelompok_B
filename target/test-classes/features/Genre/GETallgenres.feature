@@ -1,5 +1,5 @@
 Feature: show All Genres
-
+  @Musiclab @PositiveCase @GetALL @Mentor
   Scenario: Show all genres with valid data
     Given User login mentor with account
     When show all genres with valid params
@@ -8,7 +8,7 @@ Feature: show All Genres
     And Validate response genres body message "success show all genres"
     And Validate all genres JSON Schema
 
-
+  @Musiclab @NegativeCase @GetALL @Mentor
   Scenario: Show all genres with invalid params
     Given User login mentor with account
     When show all genres with invalid params
