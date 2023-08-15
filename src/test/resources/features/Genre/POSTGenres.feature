@@ -1,5 +1,6 @@
 Feature:  POST genres
-@Tugas
+
+  @Musiclab @PositiveCase @PostALL @Mentor
   Scenario: POST mentor genress with valid request body
     Given User login mentor with account
     When Post mentor genress with valid request body
@@ -7,7 +8,8 @@ Feature:  POST genres
     Then Status code should be 201 Created status
     And Validate response body mentor genress message "success add mentor genre"
     And Validate message JSON Schema mentor genress
-@Tugas
+
+  @Musiclab @NegativeCase @PostALL @Mentor
   Scenario: POST mentor genress with invalid request body
     Given User login mentor with account
     When Post mentor genress with invalid request body

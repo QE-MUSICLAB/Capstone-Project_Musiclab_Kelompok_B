@@ -1,6 +1,6 @@
 Feature: Show all mentor genres
 
-  @Tugas
+  @Musiclab @PositiveCase @GetALL @Mentor
   Scenario: Get all genres mentor with valid id
     Given User login mentor with account
     When show all genress with valid paramater mentor id 15
@@ -9,7 +9,7 @@ Feature: Show all mentor genres
     And Validate response body message should be "success show all genres"
     And validate mentors all genres JSON Schmea
 
-  @Tugas
+  @Musiclab @NegativeCase @GetALL @Mentor
   Scenario: Get all genres mentor with invalid params
     Given User login mentor with account
     When show all genress with invalid paramater mentor
@@ -18,7 +18,7 @@ Feature: Show all mentor genres
     And Validate response invalid params message should be "data not found"
     And validate invalid params mentors all genres JSON Schema
 
-  @Tugas
+  @Musiclab @NegativeCase @GetALL @Mentor
   Scenario: Get all genres mentor with invalid id
     Given User login mentor with account
     When show all genress with invalid id mentor
