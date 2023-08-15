@@ -140,4 +140,28 @@ public class TransactionStepDef {
     @And("Get students transactions with empty value params {} {}")
     public void getStudentsTransactionsWithEmptyValueParamsPageLimit(String page, String limit) {transactionAPI.getstudentstransactionstring(page, limit);
     }
+
+    @And("Validate responses body for message should be {string}")
+    public void validateResponsesBodyForMessageShouldBe(String messege) {SerenityRest.and().body(MusiclabResponses.MESSAGE,equalTo(messege));
+    }
+
+    @And("Validate JSON Schema mentor transaction")
+    public void validateJSONSchemaMentorTransaction() {File json = new File(Constants.JSON_SCHEMA_TRANSACTION+"GETmentortransactionwithvalidparamsJSONSchema.json");
+        SerenityRest.and().body(JsonSchemaValidator.matchesJsonSchema(json));
+    }
+
+    @And("Validate JSON Schema invalid paramater")
+    public void validateJSONSchemaInvalidParamater() {File json = new File(Constants.JSON_SCHEMA_TRANSACTION+"GETmentortransactioninvalidparamsJSONSchema.json");
+        SerenityRest.and().body(JsonSchemaValidator.matchesJsonSchema(json));
+    }
+
+    @And("Validate JSON Schema student transaction")
+    public void validateJSONSchemaStudentTransaction() {File json = new File(Constants.JSON_SCHEMA_TRANSACTION+"GETstudenttransactionwithvalidparamsJSONSchema.json");
+        SerenityRest.and().body(JsonSchemaValidator.matchesJsonSchema(json));
+    }
+
+    @And("Validate Json Schema student invalid params")
+    public void validateJsonSchemaStudentInvalidParams() {File json = new File(Constants.JSON_SCHEMA_TRANSACTION+"GETstudenttransactioninvalidparamsJSONSchema.json");
+        SerenityRest.and().body(JsonSchemaValidator.matchesJsonSchema(json));
+    }
 }

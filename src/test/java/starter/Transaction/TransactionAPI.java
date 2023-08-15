@@ -36,7 +36,7 @@ public class TransactionAPI {
     @Step("GET mentors transaction int")
     public void getmentorstransaction(int page, int limit) {
         SerenityRest.given()
-                .headers("Authorization", "Bearer" + Constants.BEARER_TOKEN_MENTOR)
+                .headers("Authorization", "Bearer " + Constants.BEARER_TOKEN_MENTOR)
                 .pathParam(MusiclabResponses.PAGE, page)
                 .pathParam(MusiclabResponses.LIMIT, limit);
     }
@@ -44,7 +44,7 @@ public class TransactionAPI {
     @Step("GET mentors transaction string")
     public void getmentorstransaction2(String page, String limit) {
         SerenityRest.given()
-                .headers("Authorization", "Bearer" + Constants.BEARER_TOKEN_MENTOR)
+                .headers("Authorization", "Bearer " + Constants.BEARER_TOKEN_MENTOR)
                 .pathParam(MusiclabResponses.PAGE, page)
                 .pathParam(MusiclabResponses.LIMIT, limit);
     }
@@ -52,7 +52,7 @@ public class TransactionAPI {
     @Step("GET students transaction int")
     public void getstudentstransactionint(int page, int limit) {
         SerenityRest.given()
-                .header("Authorization", "Bearer" + Constants.BEARER_TOKEN_STUDENT)
+                .header("Authorization", "Bearer " + Constants.BEARER_TOKEN_STUDENT)
                 .pathParam(MusiclabResponses.PAGE, page)
                 .pathParam(MusiclabResponses.LIMIT, limit);
     }
@@ -60,7 +60,7 @@ public class TransactionAPI {
     @Step("GET students transaction string")
     public void getstudentstransactionstring(String page, String limit) {
         SerenityRest.given()
-                .header("Authorization", "Bearer" + Constants.BEARER_TOKEN_STUDENT)
+                .header("Authorization", "Bearer " + Constants.BEARER_TOKEN_STUDENT)
                 .pathParam(MusiclabResponses.PAGE, page)
                 .pathParam(MusiclabResponses.LIMIT, limit);
     }

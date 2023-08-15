@@ -1,6 +1,8 @@
 Feature: Edit Password student
 #// BUG message nya bisa di perbaikki
-  @Tugas
+
+
+  @Musiclab @PositiveCase @PutALL @Student
   Scenario: Edit Student password with valid request body
     Given User login student with account
     When edit student password with valid request body
@@ -9,7 +11,7 @@ Feature: Edit Password student
     And Validate response body message "success update student password"
     And Validate message JSON Schema
 
-    @Tugas
+  @Musiclab @NegativeCase @PutALL @Student
     Scenario: Edit student passwotd with invalid request body
       Given User login student with account
       When edit student password with wrong old password on request body
@@ -18,7 +20,7 @@ Feature: Edit Password student
       And Validate respon body message "password not matched"
       And Validate message Json schema
 
-      @Tugas
+  @Musiclab @NegativeCase @PutALL @Student
       Scenario: Edit student passwotd with empty old password
         Given User login student with account
         When edit student password with empty old password on request body
@@ -27,7 +29,7 @@ Feature: Edit Password student
         And Validate respon body message "old password, new password and confirmation password field cannot be empty"
         And Validate message Json schemas
 
-     @Tugas
+  @Musiclab @NegativeCase @PutALL @Student
      Scenario: Edit student passwotd with empty new password
         Given User login student with account
         When edit student password with empty new password on request body
@@ -36,7 +38,7 @@ Feature: Edit Password student
         And Validate respon body message "old password, new password and confirmation password field cannot be empty"
         And Validate message Json schemas
 
-       @Tugas
+  @Musiclab @NegativeCase @PutALL @Student
        Scenario: Edit student passwotd with empty confirmation password
          Given User login student with account
          When edit student password with empty confirmation password on request body
@@ -45,7 +47,7 @@ Feature: Edit Password student
          And Validate respon body message "old password, new password and confirmation password field cannot be empty"
          And Validate message confirmation Json schema
 
-  @Tugas
+  @Musiclab @NegativeCase @PutALL @Student
   Scenario: Edit student passwotd with empty request body
     Given User login student with account
     When edit student password with empty request body
