@@ -4,6 +4,15 @@ import io.restassured.http.ContentType;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
 import starter.Utils.Constants;
+
+import java.io.File;
+
+import static starter.Utils.Constants.URL;
+
+import io.restassured.http.ContentType;
+import net.serenitybdd.rest.SerenityRest;
+import net.thucydides.core.annotations.Step;
+import starter.Utils.Constants;
 import starter.Utils.MusiclabResponses;
 
 import java.io.File;
