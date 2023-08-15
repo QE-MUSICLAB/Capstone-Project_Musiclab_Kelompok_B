@@ -62,6 +62,8 @@ Feature: Get mentor transaction
       | page | limit |
       |  ee   |   bb     |
       |  xx    |   PUBG    |
+
+    #Seharusnya 400 bad request dikarenakan valuenya 0 tetapi kenapa 200 OK ini bug
   @Musiclab @NegativeCase @GetALL @Student
   Scenario Outline: Get students transactions with empty value params
     Given User login student with account
