@@ -106,4 +106,38 @@ public class TransactionStepDef {
     @And("send request body for transaction with empty body request")
     public void sendRequestBodyForTransactionWithEmptyBodyRequest() {SerenityRest.when().post(TransactionAPI.POST_MAKE_TRANSACTION);
     }
+    // Get show mentors transaction
+    @And("Get mentor transactions with valid parameter {} {}")
+    public void getMentorTransactionsWithValidParameterPageLimit(int page, int limit) {
+        transactionAPI.getmentorstransaction(page, limit);
+    }
+
+    @When("Send GET request for mentor transactions")
+    public void sendGETRequestForMentorTransactions() {SerenityRest.when().get(TransactionAPI.GET_TRANSACTIONS_MENTOR);
+    }
+
+
+    @And("Get mentor transactions with invalid parameter {} {}")
+    public void getMentorTransactionsWithInvalidParameterPageLimit(String page, String limit) {transactionAPI.getmentorstransaction2(page, limit);
+    }
+// mentor empty value
+    @And("Get mentor transactions with empty value parameter {} {}")
+    public void getMentorTransactionsWithEmptyValueParameterPageLimit(String page, String limit){transactionAPI.getmentorstransaction2(page, limit);
+    }
+// student with valid params
+    @And("Get students transactions with valid parameter {} {}")
+    public void getStudentsTransactionsWithValidParameterPageLimit(int page, int limit) {transactionAPI.getstudentstransactionint(page, limit);
+    }
+
+    @When("Send GET request for students transactions")
+    public void sendGETRequestForStudentsTransactions() {SerenityRest.when().get(TransactionAPI.GET_TRANSACTIONS_STUDENTS);
+    }
+
+    @And("Get students transactions with invalid parameter {} {}")
+    public void getStudentsTransactionsWithInvalidParameterPageLimit(String page, String limit) {transactionAPI.getstudentstransactionstring(page, limit);
+    }
+
+    @And("Get students transactions with empty value params {} {}")
+    public void getStudentsTransactionsWithEmptyValueParamsPageLimit(String page, String limit) {transactionAPI.getstudentstransactionstring(page, limit);
+    }
 }
