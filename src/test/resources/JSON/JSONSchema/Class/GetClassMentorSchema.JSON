@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "image": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "level": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "syllabus": {
+          "type": "string"
+        },
+        "for_whom": {
+          "type": "string"
+        },
+        "requirement": {
+          "type": "string"
+        },
+        "price": {
+          "type": "integer"
+        },
+        "duration": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "image",
+        "name",
+        "level",
+        "description",
+        "syllabus",
+        "for_whom",
+        "requirement",
+        "price",
+        "duration"
+      ]
+    },
+    "message": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "data",
+    "message"
+  ]
+}
