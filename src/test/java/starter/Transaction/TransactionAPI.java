@@ -4,7 +4,9 @@ import io.restassured.http.ContentType;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
 import starter.Utils.Constants;
+
 import starter.Utils.MusiclabResponses;
+
 
 import java.io.File;
 
@@ -12,8 +14,10 @@ import static starter.Utils.Constants.URL;
 
 public class TransactionAPI {
     public static String POST_MAKE_TRANSACTION = URL + "transactions";
+
     public static String POST_MAKE_TRANSACTION_INVALID_PARAMS = URL + "transaction";
     public static String GET_TRANSACTIONS = URL + "mentors/transactions?page={page}&limit={limit}";
+
 
 
     @Step("POST make transaction")
