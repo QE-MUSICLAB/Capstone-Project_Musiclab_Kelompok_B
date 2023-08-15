@@ -83,4 +83,27 @@ public class TransactionStepDef {
         File json = new File(Constants.JSON_SCHEMA_TRANSACTION + "POSTmaketransactionwithemptyclass_idJSONSchema.json");
         SerenityRest.and().body(JsonSchemaValidator.matchesJsonSchema(json));
     }
+// invalid parameter
+    @When("Post make transaction with invalid paramter")
+    public void postMakeTransactionWithInvalidParamter() {File json = new File(Constants.REQ_BODY_TRANSACTION+"/POSTmaketransactionwithvaliddata.json");
+        transactionAPI.postmaketransaction(json);
+    }
+
+    @And("send request body for transaction with invalid parameter")
+    public void sendRequestBodyForTransactionWithInvalidParameter() {SerenityRest.when().post(TransactionAPI.POST_MAKE_TRANSACTION_INVALID_PARAMS);
+    }
+
+    @And("Validate JSON Schema make transaction with invalid parameter")
+    public void validateJSONSchemaMakeTransactionWithInvalidParameter() {File json = new File(Constants.JSON_SCHEMA_TRANSACTION+"POSTmaketransactioninvalidparamJSONSchema.json");
+        SerenityRest.and().body(JsonSchemaValidator.matchesJsonSchema(json));
+    }
+// empty body request
+    @When("Post make transaction with empty body request")
+    public void postMakeTransactionWithEmptyBodyRequest() {File json = new File(Constants.REQ_BODY_TRANSACTION+"/POSTmaketransactionwithemptybody.json");
+        transactionAPI.postmaketransaction(json);
+    }
+
+    @And("send request body for transaction with empty body request")
+    public void sendRequestBodyForTransactionWithEmptyBodyRequest() {SerenityRest.when().post(TransactionAPI.POST_MAKE_TRANSACTION);
+    }
 }

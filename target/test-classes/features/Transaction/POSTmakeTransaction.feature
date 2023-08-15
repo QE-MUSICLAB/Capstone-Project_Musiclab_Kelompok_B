@@ -35,3 +35,20 @@ Feature: POST make transaction mentor and student
     Then Status code should be 400 Bad Request
     And Validate response body message make transaction "minimum start date input is today"
     And Validate JSON Schema make transaction invalid start date
+
+  @Tugas
+  Scenario: Post Make transaction with invalid parameter
+    Given User login student with account
+    When Post make transaction with invalid paramter
+    And send request body for transaction with invalid parameter
+    Then Status code should be 404 Not Found
+    And Validate response body message make transaction "Not Found"
+    And Validate JSON Schema make transaction with invalid parameter
+
+  @Tugas
+  Scenario: Post Make transaction with empty body request
+    Given User login student with account
+    When Post make transaction with empty body request
+    And send request body for transaction with empty body request
+    Then Status code should be 400 Bad Request
+    And Validate response body message make transaction "minimum start date input is today"
