@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="POST make transaction mentor and student" skipped="0" tests="6" time="17.4" timestamp="2023-08-16 06:47:41"><testcase name="Post Make transaction with valid data"><failure message="1 expectation failed.&#10;Expected status code &lt;201&gt; but was &lt;404&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;201&gt; but was &lt;404&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;201&gt; but was &lt;404&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)&#13;
+io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)&#13;
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1267)&#13;
+io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)&#13;
+io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)&#13;
+starter.Utils.StatusCode.statusCodeshouldbeCreatedStatus(StatusCode.java:30)&#13;
+✽.Status code should be 201 Created status(classpath:features/Transaction/POSTmakeTransaction.feature:8)&#13;
+</system-err></testcase><testcase name="Post Make transaction with empty class id"/><testcase name="Post Make transaction with schedule id"/><testcase name="Post Make transaction with invalid start date"/><testcase name="Post Make transaction with invalid parameter"/><testcase name="Post Make transaction with empty body request"/></testsuite>
