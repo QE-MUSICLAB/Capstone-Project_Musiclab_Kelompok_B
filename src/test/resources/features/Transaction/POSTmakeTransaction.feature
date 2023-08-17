@@ -5,7 +5,7 @@ Feature: POST make transaction mentor and student
     Given User login student with account
     When Post make transaction with valid request body
     And send request body for transaction
-    Then Status code should be 201 Created status
+    Then Status code should be 201 Created
     And Validate response body message make transaction "success make transaction"
     And Validate JSON Schema make transaction
 

@@ -25,8 +25,8 @@ public class StatusCode {
     public void statusCodeShouldBeMethodNotAllowed(int NotAllowed) {
         SerenityRest.then().statusCode(NotAllowed);
     }
-    @Then("Status code should be {int} Created status")
-    public void statusCodeshouldbeCreatedStatus(int Created){
+    @Then("Status code should be {int} Created")
+    public void statusCodeshouldbeCreated(int Created){
         SerenityRest.then().statusCode(Created);
     }
 

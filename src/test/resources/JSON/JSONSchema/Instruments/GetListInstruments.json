@@ -8,7 +8,7 @@
         {
           "type": "object",
           "properties": {
-            "genre_id": {
+            "id": {
               "type": "integer"
             },
             "name": {
@@ -16,14 +16,14 @@
             }
           },
           "required": [
-            "genre_id",
+            "id",
             "name"
           ]
         },
         {
           "type": "object",
           "properties": {
-            "genre_id": {
+            "id": {
               "type": "integer"
             },
             "name": {
@@ -31,14 +31,14 @@
             }
           },
           "required": [
-            "genre_id",
+            "id",
             "name"
           ]
         },
         {
           "type": "object",
           "properties": {
-            "genre_id": {
+            "id": {
               "type": "integer"
             },
             "name": {
@@ -46,7 +46,37 @@
             }
           },
           "required": [
-            "genre_id",
+            "id",
+            "name"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "name"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
             "name"
           ]
         }
