@@ -15,6 +15,7 @@ public class Constants {
     public static String REQ_BODY_TRANSACTION = JSON +"/ReqBody/Transaction";
     public static String REQ_BODY_INSTRUMENTS = JSON+"/ReqBody/Instruments";
     public static String REQ_BODY_SCHEDULE = JSON+"/ReqBody/Schedule";
+    public static String REQ_BODY_CHATS = JSON+"/ReqBody/Chats";
 
 
 
