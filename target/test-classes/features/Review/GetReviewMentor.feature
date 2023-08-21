@@ -1,6 +1,6 @@
 Feature: Get Review Mentor
 
-  @Musiclab @PositiveCase @Review @Student
+  @Musiclab @PositiveCase @Review
   Scenario:Get mentor review with valid path
     Given User login student with account
     When  Get mentor review class with valid path 15
@@ -8,7 +8,7 @@ Feature: Get Review Mentor
     Then  Status code should be 200 OK
     And   Validate get review mentor with json schema validator
 
-  @Musiclab @NegativeCaseCase @Review @Student
+  @Musiclab @NegativeCaseCase @Review
   Scenario:Get mentor review with empty path
     Given User login student with account
     When  Get mentor review class with empty path

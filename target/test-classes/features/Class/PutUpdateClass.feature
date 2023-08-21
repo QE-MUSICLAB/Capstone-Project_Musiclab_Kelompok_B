@@ -1,6 +1,6 @@
 Feature: Put Update Mentor Class
 
-  @Musiclab @PositiveCase @Class @Mentor
+  @Musiclab @PositiveCase @Class
   Scenario Outline:Put update mentor class with valid request body
     Given User login mentor with account
     When  Put update mentor class with valid request body using valid path <id>
@@ -11,7 +11,7 @@ Feature: Put Update Mentor Class
         | id |
         | 34 |
 
-  @Musiclab @PositiveCase @Class @Mentor
+  @Musiclab @PositiveCase @Class
   Scenario Outline:Put update mentor class with invalid request body
     Given User login mentor with account
     When  Put update mentor class with invalid request body using valid path <id>
@@ -22,7 +22,7 @@ Feature: Put Update Mentor Class
       | id |
       | 4  |
 
-  @Musiclab @PositiveCase @Class @Mentor
+  @Musiclab @PositiveCase @Class
 
   Scenario Outline:Put update mentor class with invalid path
     Given User login mentor with account
