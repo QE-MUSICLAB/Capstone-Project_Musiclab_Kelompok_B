@@ -9,6 +9,7 @@ Feature:  Delete all genres mentor
 #    And Validate response body delete message should be "success delete mentor genre"
 #    And Validate message delete JSON Schema
 
+
   @Musiclab @NegativeCase @Genre
   Scenario: Delete all genress mentor with invalid params
     Given User login mentor with account
