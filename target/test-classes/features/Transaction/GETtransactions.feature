@@ -1,5 +1,5 @@
 Feature: Get mentor transaction
-  @Musiclab @PositiveCase @GetALL @Mentor
+  @Musiclab @PositiveCase @GetALL @Mentor @Transaction
   Scenario Outline: Get mentor transactions with valid parameter page
     Given User login mentor with account
     And Get mentor transactions with valid parameter <page> <limit>
@@ -12,7 +12,7 @@ Feature: Get mentor transaction
       | 1    | 100    |
       | 5    | 20     |
 
-  @Musiclab @NegativeCase @GetALL @Mentor
+  @Musiclab @NegativeCase @GetALL @Mentor @Transaction
   Scenario Outline: Get mentor transactions with invalid parameter page and limit
     Given User login mentor with account
     And Get mentor transactions with invalid parameter <page> <limit>
@@ -25,7 +25,7 @@ Feature: Get mentor transaction
       | @   | JHO    |
       | @@    | JU     |
 # BUG seharusnya 400 bad request dengan data kosong malah 200 OK
-  @Musiclab @NegativeCase @GetALL @Mentor
+  @Musiclab @NegativeCase @GetALL @Mentor @Transaction
   Scenario Outline: Get mentor transactions with empty value
     Given User login mentor with account
     And Get mentor transactions with empty value parameter <page> <limit>
@@ -37,7 +37,7 @@ Feature: Get mentor transaction
 
 
 # Student Transaction
-  @Musiclab @PositiveCase @GetALL @Student
+  @Musiclab @PositiveCase @GetALL @Transaction
   Scenario Outline: Get students transactions with valid params
     Given User login student with account
     And Get students transactions with valid parameter <page> <limit>
@@ -50,7 +50,7 @@ Feature: Get mentor transaction
       |  1    |   100     |
       |  5    |   50     |
 
-  @Musiclab @NegativeCase @GetALL @Student
+  @Musiclab @NegativeCase @GetALL @Transaction
   Scenario Outline: Get students transactions with invalid params
     Given User login student with account
     And Get students transactions with invalid parameter <page> <limit>
@@ -64,7 +64,7 @@ Feature: Get mentor transaction
       |  xx    |   PUBG    |
 
     #Seharusnya 400 bad request dikarenakan valuenya 0 tetapi kenapa 200 OK ini bug
-  @Musiclab @NegativeCase @GetALL @Student
+  @Musiclab @NegativeCase @GetALL @Transaction
   Scenario Outline: Get students transactions with empty value params
     Given User login student with account
     And Get students transactions with empty value params <page> <limit>

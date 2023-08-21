@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="POST make transaction mentor and student" skipped="0" tests="6" time="17.4" timestamp="2023-08-16 06:47:41"><testcase name="Post Make transaction with valid data"><failure message="1 expectation failed.&#10;Expected status code &lt;201&gt; but was &lt;404&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
-Expected status code &lt;201&gt; but was &lt;404&gt;.
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="POST make transaction mentor and student" skipped="0" tests="6" time="12.88" timestamp="2023-08-21 11:01:09"><testcase name="Post Make transaction with valid data"><failure message="1 expectation failed.&#10;Expected status code &lt;201&gt; but was &lt;400&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;201&gt; but was &lt;400&gt;.
 </failure><system-err>1 expectation failed.
-Expected status code &lt;201&gt; but was &lt;404&gt;.
+Expected status code &lt;201&gt; but was &lt;400&gt;.
 &#13;
 io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)&#13;
 io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)&#13;
