@@ -8,6 +8,7 @@ public class Constants {
     public static String REQ_BODY_MENTOR = JSON+"/ReqBody/Mentor";
     public static String REQ_BODY_REVIEW = JSON+"/ReqBody/Review";
     public static String REQ_BODY_CLASS = JSON+"/ReqBody/Class";
+    public static String REQ_BODY_IMAGES = JSON+"/Images/";
 
 
 

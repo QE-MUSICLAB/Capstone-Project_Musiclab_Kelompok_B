@@ -12,7 +12,7 @@ import static starter.Utils.Constants.URL;
 public class ReviewAPI {
     public static String POST_REVIEW_MENTOR =URL+ "mentors/{id}/reviews";
     public static String GET_REVIEW_MENTOR=URL+ "mentors/{id}/reviews";
-    public static String GET_REVIEW_MENTOR_EMPTY=URL+ "mentors//reviews";
+    public static String GET_REVIEW_MENTOR_EMPTY=URL+ "mentorsreviews";
 
     @Step("Post review mentors")
     public void setPostReviewMentorValid( int id, File json) {

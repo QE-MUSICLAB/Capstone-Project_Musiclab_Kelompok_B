@@ -1,6 +1,6 @@
-Feature: Put Edit Profile
+Feature: Put Edit Profile Mentor
 
-  @Musiclab @PositiveCase @EditProfile @Mentor
+  @Musiclab @PositiveCase  @Mentor
   Scenario:Put Update mentor profile with valid request body
     Given User login mentor with account
     When  Put Update mentor profile with valid request body
@@ -8,7 +8,7 @@ Feature: Put Edit Profile
     Then  Status code should be 200 OK
     And   Validate put mentor profile with json schema validator
 
-  @Musiclab @NegativeCase @EditProfile @Mentor
+  @Musiclab @NegativeCase  @Mentor
   Scenario:Put Update mentor profile with invalid request body
     Given User login mentor with account
     When  Put Update mentor profile with invalid request body
@@ -16,7 +16,7 @@ Feature: Put Edit Profile
     Then  Status code should be 404 Not Found
     And   Validate put mentor profile using invalid request body with json schema validator
 
-  @Musiclab @NegativeCase @EditProfile @Mentor
+  @Musiclab @NegativeCase  @Mentor
   Scenario:Put Update mentor profile with empty value body
     Given User login mentor with account
     When  Put Update mentor profile with empty value body

@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Post Register Student and Mentor","Register new mentor with valid data","FAILURE","2023-08-20T22:24:49.664197+07:00[Asia/Jakarta]","0.0","0.57"
+"Delete Mentor Class","Delete class mentor with valid path","FAILURE","2023-08-20T22:24:51.2117969+07:00[Asia/Jakarta]","0.0","2.6"
+"Get All Mentor Class","Get all mentor class with valid path","FAILURE","2023-08-20T22:24:55.5827687+07:00[Asia/Jakarta]","0.0","2.25"
+"Get Mentor Class","Get mentor class with valid path","FAILURE","2023-08-20T22:25:01.3583407+07:00[Asia/Jakarta]","0.0","2.17"
+"Post Create Credentials","Post create Credentials with valid request body","FAILURE","2023-08-20T22:25:29.8201575+07:00[Asia/Jakarta]","0.0","1.84"

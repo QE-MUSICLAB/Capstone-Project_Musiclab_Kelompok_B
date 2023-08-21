@@ -1,6 +1,6 @@
-Feature: Get All Class
+Feature: Get All Mentor Class
 
-  @Musiclab @PositiveCase @AllMentorClass @Mentor
+  @Musiclab @PositiveCase @Class
     #BUG
   Scenario Outline:Get all mentor class with valid path
     Given User login mentor with account
@@ -10,22 +10,20 @@ Feature: Get All Class
     And   Validate get mentor class with json schema validator
     Examples:
       | id |
-      | 35 |
+      | 39 |
 
-  @Musiclab @NegativeCase @AllMentorClass @Mentor
-
+  @Musiclab @NegativeCase @Class
   Scenario Outline:Get all mentor class with invalid path
     Given User login mentor with account
     When  Get all mentor class with invalid path <id>
     And   Send request GET for get all mentor class
     Then  Status code should be 400 Bad Request
     And   Validate get all mentor class using invalid path with json schema validator
-
     Examples:
       | id |
       | 1s |
 
-  @Musiclab @NegativeCase @AllMentorClass @Mentor
+  @Musiclab @NegativeCase @Class
   Scenario:Get all mentor class without path
     Given User login mentor with account
     When  Get all mentor class without path

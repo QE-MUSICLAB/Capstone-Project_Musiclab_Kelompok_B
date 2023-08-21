@@ -8,6 +8,7 @@ import starter.Utils.Constants;
 import java.io.File;
 import java.lang.reflect.Field;
 
+import static starter.Utils.Constants.REQ_BODY_IMAGES;
 import static starter.Utils.Constants.URL;
 
 public class MentorAPI {
@@ -23,40 +24,45 @@ public class MentorAPI {
     public static String PUT_EDIT_MENTOR_PROFILE =URL+ "mentors";
     public static String PUT_EDIT_MENTOR_PROFILE_INVALID =URL+ "mentorss";
     public static String PUT_EDIT_PASSWORD_MENTOR =URL+ "mentors/password";
+    public static String POST_CREATE_CREDENTIALS =URL+ "mentors/credentials";
+    public static String DELETE_MENTOR_INVALID = URL+"mentorsS";
+    public static String DELETE_MENTOR = URL+"mentors";
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
     @Step("Get all mentors ")
     public void setGetAllMentor() {
         SerenityRest
                 .given();}
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
     @Step("Get mentors profile by id")
     public void setGetMentorProfileById(int id) {
     SerenityRest
             .given()
             .pathParam("id", id);}
+
     @Step("Get mentors profile with invalid id")
     public void setGetAllMentorProfileInvalid(String character) {
         SerenityRest
                 .given()
                 .pathParam("character",character);}
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
     @Step("Get mentors top week ")
     public void setGetMentorTopWeek() {
     SerenityRest
             .given();}
+
     @Step("Get mentors top week invalid path ")
     public void setGetMentorTopWeekInvalid() {
         SerenityRest
                 .given();}
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
     @Step("Get mentors profile ")
     public void setGetMentorProfile() {
         SerenityRest
                 .given()
                 .headers("Authorization", "Bearer " + Constants.BEARER_TOKEN_MENTOR);}
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
     @Step("Put update mentors profile ")
     public void setPutEditMentorProfile(File json) {
     SerenityRest
@@ -64,7 +70,7 @@ public class MentorAPI {
             .headers("Authorization", "Bearer " + Constants.BEARER_TOKEN_MENTOR)
             .contentType(ContentType.JSON)
             .body(json);}
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
     @Step("Put update edit mentors password ")
     public void setPutEditMentorPassword(File json) {
     SerenityRest
@@ -73,4 +79,27 @@ public class MentorAPI {
             .contentType(ContentType.JSON)
             .body(json);}
 
-}
+    @Step("Post create Credentials with valid request body")
+    public void setPostCreateCredentials(String certificate_file, String type, String name){
+        SerenityRest.given()
+                .headers("Authorization","Bearer "+Constants.BEARER_TOKEN_MENTOR)
+                .multiPart("certificate_file", new File (REQ_BODY_IMAGES +certificate_file));}
+
+    @Step("Delete mentor")
+    public void setDeleteMentor (String id) {
+        SerenityRest
+                .given()
+                .header("Authorization", "Bearer "+ Constants.BEARER_TOKEN_MENTOR)
+                .pathParam("id", id);
+    }
+    @Step("Delete mentor invalid")
+    public void setDeleteMentorInvalid () {
+        SerenityRest
+                .given()
+                .header("Authorization", "Bearer "+ Constants.BEARER_TOKEN_MENTOR)
+                ;}
+
+    }
+
+
+

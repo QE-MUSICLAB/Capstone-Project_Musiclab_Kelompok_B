@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Get Review Mentor" skipped="0" tests="2" time="17.21" timestamp="2023-08-20 10:25:59"><testcase name="Get mentor review with valid path"/><testcase name="Get mentor review with empty path"/></testsuite>

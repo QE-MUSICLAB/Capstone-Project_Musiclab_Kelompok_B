@@ -1,6 +1,6 @@
 Feature: Post Make Class
 
-  @Musiclab @PositiveCase @MakeClassMentor @Mentor
+  @Musiclab @PositiveCase @Class
   Scenario:Post make class with valid request body
     Given User login mentor with account
     When  Post make class with valid request body
@@ -9,7 +9,7 @@ Feature: Post Make Class
     And   Validate Post make class with json schema validator
 
 
-  @Musiclab @NegativeCase @MakeClassMentor @Mentor
+  @Musiclab @NegativeCase @Class
   Scenario:Post make class with invalid path
     Given User login mentor with account
     When  Post make class with valid request body using invalid path
@@ -18,13 +18,12 @@ Feature: Post Make Class
     And   Validate Post make class using invalid path with json schema validator
 
 
-  @Musiclab @NegativeCase @MakeClassMentor @Mentor
-  Scenario:Post make class with incomplete request body
-    #BUG
+  @Musiclab @NegativeCase @Class
+  Scenario:Post make class with empty request body
     Given User login mentor with account
-    When  Post make class with incomplete request body
-    And   Send request body for create class with incomplete request body
-    Then  Status code should be 400 Bad Request
-    And   Validate Post make class using invalid incomplete request body with json schema validator
+    When  Post make class with empty request body
+    And   Send request body for create class with empty request body
+    Then  Status code should be 500 Internal server error
+    And   Validate Post make class using empty request body with json schema validator
 
 

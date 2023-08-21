@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: Delete Mentor Class
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.38 s <<< FAILURE! - in Delete Mentor Class
+Delete Mentor Class.Delete class mentor with valid path  Time elapsed: 2.607 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+
