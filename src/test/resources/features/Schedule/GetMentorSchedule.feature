@@ -1,6 +1,6 @@
 Feature: Get Mentor Schedule
 
-  @MusicLab @PositiveCase @GetSchedule @Mentor
+  @Musiclab @PositiveCase @GetSchedule @Mentor
   Scenario Outline:Get mentor schedule with valid path
     Given User login mentor with account
     When  Get mentor schedule with valid path <id>

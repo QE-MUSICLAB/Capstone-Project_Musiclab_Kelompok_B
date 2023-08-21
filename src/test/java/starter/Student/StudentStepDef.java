@@ -155,8 +155,8 @@ public class StudentStepDef {
         SerenityRest.when().put(StudentAPI.PUT_EDIT_STUDENT_PASSWORD);
     }
 
-    @And("Validate response body message {string}")
-    public void validateResponseBodyMessage(String message) {SerenityRest.and().body(MusiclabResponses.MESSAGE,equalTo(message));
+    @And("validate response body message {string}")
+    public void validateResponseBodyMessagee(String message) {SerenityRest.and().body(MusiclabResponses.MESSAGE,equalTo(message));
     }
 
     @And("Validate message JSON Schema")

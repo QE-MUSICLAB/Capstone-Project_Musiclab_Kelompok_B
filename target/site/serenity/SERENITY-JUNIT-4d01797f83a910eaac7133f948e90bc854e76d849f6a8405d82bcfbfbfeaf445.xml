@@ -1,1 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Put Update Mentor Class" skipped="0" tests="3" time="6.09" timestamp="2023-08-21 10:46:51"><testcase name="Put update mentor class with valid request body"/><testcase name="Put update mentor class with invalid request body"/><testcase name="Put update mentor class with invalid path"/></testsuite>

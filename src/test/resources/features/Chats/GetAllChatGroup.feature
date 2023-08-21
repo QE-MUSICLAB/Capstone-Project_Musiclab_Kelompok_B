@@ -1,6 +1,6 @@
 Feature:Get All Chat Group
 
-  @MusicLab @PositiveCase @GetStudent @Inbox
+  @Musiclab @PositiveCase @GetStudent @Inbox
   Scenario Outline: Get all chat group with valid path
     Given User login student with account
     And Get all chat group with valid <page> as page and <limit> as limit
@@ -10,7 +10,7 @@ Feature:Get All Chat Group
       | page | limit |
       | 1    | 3     |
 
-  @MusicLab @NegativeCase @GetStudent @Inbox
+  @Musiclab @NegativeCase @GetStudent @Inbox
   Scenario Outline: Get all chat group with invalid path
     Given User login student with account
     And Get all chat group with invalid "<page>" as page and "<limit>" as limit

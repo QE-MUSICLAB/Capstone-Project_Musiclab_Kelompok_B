@@ -1,6 +1,6 @@
 Feature:Get List Instruments by Mentor Id
 
-  @MusicLab @PositiveCase @GetInstrument @Mentor
+  @Musiclab @PositiveCase @GetInstrument @Mentor
   Scenario Outline: Get list instruments with valid parameter
     Given User login mentor with account
     And Get list instruments with valid mentor id <mentor_id>
@@ -11,7 +11,7 @@ Feature:Get List Instruments by Mentor Id
       | mentor_id |
       | 39        |
 
-  @MusicLab @NegativeCase @GetInstrument @Mentor
+  @Musiclab @NegativeCase @GetInstrument @Mentor
   Scenario Outline: Get list instruments with invalid parameter
     Given User login mentor with account
     And Get list instruments with invalid mentor id "<mentor_id>"
@@ -21,7 +21,7 @@ Feature:Get List Instruments by Mentor Id
       | mentor_id |
       | tiga      |
 
-  @MusicLab @NegativeCase @GetInstrument @Mentor
+  @Musiclab @NegativeCase @GetInstrument @Mentor
   Scenario Outline: Get list instruments with empty parameter
     Given User login mentor with account
     And Get list instruments with empty mentor id <mentor_id>

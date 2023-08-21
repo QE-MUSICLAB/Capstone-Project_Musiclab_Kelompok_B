@@ -25,7 +25,7 @@ public class MentorAPI {
     public static String PUT_EDIT_MENTOR_PROFILE_INVALID =URL+ "mentorss";
     public static String PUT_EDIT_PASSWORD_MENTOR =URL+ "mentors/password";
     public static String POST_CREATE_CREDENTIALS =URL+ "mentors/credentials";
-    public static String DELETE_MENTOR_INVALID = URL+"mentorsS";
+    public static String DELETE_MENTOR_INVALID = URL+"mentors%$#$%";
     public static String DELETE_MENTOR = URL+"mentors";
 
 

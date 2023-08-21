@@ -1,6 +1,6 @@
 Feature: Post Mentor Schedule Check
 
-  @MusicLab @PositiveCase @ScheduleCheck @Mentor
+  @Musiclab @PositiveCase @ScheduleCheck @Mentor
   Scenario:Post mentor schedule check with valid request body
     Given User login mentor with account
     When  Post mentor schedule check with valid request body
@@ -8,21 +8,21 @@ Feature: Post Mentor Schedule Check
     Then  Status code should be 200 OK
     And   Validate Post make schedule with json schema validator
 
-  @MusicLab @NegativeCase @ScheduleCheck @Mentor
+  @Musiclab @NegativeCase @ScheduleCheck @Mentor
   Scenario:Post mentor schedule check with invalid request body
     Given User login mentor with account
     When  Post mentor schedule check with invalid request body
     And   Send request body for create mentor schedule check
     Then  Status code should be 400 Bad Request
 
-  @MusicLab @NegativeCase @ScheduleCheck @Mentor
+  @Musiclab @NegativeCase @ScheduleCheck @Mentor
   Scenario:Post mentor schedule check with empty request body
     Given User login mentor with account
     When  Post mentor schedule check with empty request body
     And   Send request body for create mentor schedule check
     Then  Status code should be 400 Bad Request
 
-  @MusicLab @NegativeCase @ScheduleCheck @Mentor
+  @Musiclab @NegativeCase @ScheduleCheck @Mentor
   Scenario:Post mentor schedule check with empty value class_id request body
     Given User login mentor with account
     When  Post mentor schedule check with empty value class_id request body
