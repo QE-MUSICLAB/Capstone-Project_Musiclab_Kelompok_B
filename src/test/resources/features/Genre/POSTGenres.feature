@@ -1,6 +1,6 @@
 Feature:  POST genres
 
-  @Musiclab @PositiveCase @PostALL @Mentor
+  @Musiclab @PositiveCase @PostALL @Mentor @Genre
   Scenario: POST mentor genress with valid request body
     Given User login mentor with account
     When Post mentor genress with valid request body
@@ -9,7 +9,7 @@ Feature:  POST genres
     And Validate response body mentor genress message "success add mentor genre"
     And Validate message JSON Schema mentor genress
 
-  @Musiclab @NegativeCase @PostALL @Mentor
+  @Musiclab @NegativeCase @PostALL @Mentor @Genre
   Scenario: POST mentor genress with invalid request body
     Given User login mentor with account
     When Post mentor genress with invalid request body
