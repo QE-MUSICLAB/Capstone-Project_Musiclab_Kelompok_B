@@ -21,6 +21,7 @@ public class StudentAPI {
     public static String DELETE_STUDENT_WITH_INVALID_PATH = URL+"studentssss";
 
 
+
     @Step("Put edit student profile")
     public void puteditstudentprofile(File json){
         SerenityRest.given().headers("Authorization","Bearer " + Constants.BEARER_TOKEN_STUDENT)
