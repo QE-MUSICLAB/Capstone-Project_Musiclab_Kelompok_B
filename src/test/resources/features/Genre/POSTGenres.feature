@@ -5,7 +5,7 @@ Feature:  POST genres
     Given User login mentor with account
     When Post mentor genress with valid request body
     And request mentor genress with valid request body
-    Then Status code should be 201 Created status
+    Then Status code should be 201 Created
     And Validate response body mentor genress message "success add mentor genre"
     And Validate message JSON Schema mentor genress
 
