@@ -20,6 +20,7 @@ public class GenreAPI {
     public static String GET_MENTORS_ALL_GENRES_INVALID_ID =URL+ "mentors/wadidaw/genres";
 
 
+
     public static String DELETE_ALL_MENTOR_WITH_ID =URL+ "mentors/{id}/genres";
 
 
