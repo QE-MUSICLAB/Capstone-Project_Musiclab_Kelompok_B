@@ -1,6 +1,6 @@
 Feature: Post Make Class
 
-  @Musiclab @PositiveCase @Class @Mentor
+  @Musiclab @PositiveCase @Class
   Scenario:Post make class with valid request body
     Given User login mentor with account
     When  Post make class with valid request body
@@ -9,7 +9,7 @@ Feature: Post Make Class
     And   Validate Post make class with json schema validator
 
 
-  @Musiclab @NegativeCase @Class @Mentor
+  @Musiclab @NegativeCase @Class
   Scenario:Post make class with invalid path
     Given User login mentor with account
     When  Post make class with valid request body using invalid path
@@ -18,7 +18,7 @@ Feature: Post Make Class
     And   Validate Post make class using invalid path with json schema validator
 
 
-  @Musiclab @NegativeCase @Class @Mentor
+  @Musiclab @NegativeCase @Class
   Scenario:Post make class with empty request body
     Given User login mentor with account
     When  Post make class with empty request body

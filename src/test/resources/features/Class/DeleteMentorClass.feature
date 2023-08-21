@@ -1,6 +1,6 @@
 Feature: Delete Mentor Class
 
-  @Musiclab @PositiveCase @Class @Mentor
+  @Musiclab @PositiveCase @Class
     #BUG
   Scenario Outline: Delete class mentor with valid path
     Given User login mentor with account
@@ -12,7 +12,7 @@ Feature: Delete Mentor Class
       | id |
       | 6  |
 
-  @Musiclab @NegativeCase @Class @Mentor
+  @Musiclab @NegativeCase @Class
   Scenario Outline: Delete class mentor with invalid path
     Given User login mentor with account
     When  Delete class mentor with invalid path <id>

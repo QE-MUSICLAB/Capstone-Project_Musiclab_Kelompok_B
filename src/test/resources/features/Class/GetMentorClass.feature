@@ -1,6 +1,6 @@
 Feature: Get Mentor Class
 
-  @Musiclab @PositiveCase @Class @Mentor
+  @Musiclab @PositiveCase @Class
     #BUG
   Scenario Outline:Get mentor class with valid path
     Given User login mentor with account
@@ -12,7 +12,7 @@ Feature: Get Mentor Class
       | id |
       | 6  |
 
-  @Musiclab @NegativeCase @Class @Mentor
+  @Musiclab @NegativeCase @Class
   Scenario Outline:Get mentor class with invalid path
     Given User login mentor with account
     When  Get mentor class with invalid path <id>
@@ -23,7 +23,7 @@ Feature: Get Mentor Class
       | id   |
       | 1000 |
 
-  @Musiclab @NegativeCase @Class @Mentor
+  @Musiclab @NegativeCase @Class
   Scenario:Get mentor class with empty path
     Given User login mentor with account
     When  Get mentor class with empty path
