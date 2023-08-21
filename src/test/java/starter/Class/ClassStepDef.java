@@ -17,126 +17,127 @@ public class ClassStepDef {
 
     @When("Post make class with valid request body")
     public void postMakeClassWithValidRequestBody() {
-        File json = new File(Constants.REQ_BODY_CLASS + "/PostMakeClassWithValidBody.json");
-        classAPI.setPostMakeClass(json);
+    File json = new File(Constants.REQ_BODY_CLASS + "/PostMakeClassWithValidBody.json");
+    classAPI.setPostMakeClass(json);
     }
     @And("Send request body for create class")
     public void sendRequestBodyForCreateClass() {
-        SerenityRest.when().post(ClassAPI.POST_MAKE_CLASS);
+    SerenityRest.when().post(ClassAPI.POST_MAKE_CLASS);
     }
 
     @And("Validate Post make class with json schema validator")
     public void validatePostMakeClassWithJsonSchemaValidator() {
-        File json = new File(Constants.JSON_SCHEMA_CLASS + "/PostMakeClassWithValidBodySchema.json");
-        SerenityRest.then().assertThat().body(JsonSchemaValidator.matchesJsonSchema(json));
+     File json = new File(Constants.JSON_SCHEMA_CLASS + "/PostMakeClassWithValidBodySchema.json");
+     SerenityRest.then().assertThat().body(JsonSchemaValidator.matchesJsonSchema(json));
     }
-    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
     @When("Post make class with valid request body using invalid path")
     public void postMakeClassWithValidRequestBodyUsingInvalidPath() {
-        File json = new File(Constants.REQ_BODY_CLASS + "/PostMakeClassWithValidBody.json");
-        classAPI.setPostMakeClass(json);
+    File json = new File(Constants.REQ_BODY_CLASS + "/PostMakeClassWithValidBody.json");
+    classAPI.setPostMakeClass(json);
     }
 
     @And("Send request body for create class using invalid path")
     public void sendRequestBodyForCreateClassUsingInvalidPath() {
-        SerenityRest.when().post(ClassAPI.POST_MAKE_CLASS_INVALID);
+    SerenityRest.when().post(ClassAPI.POST_MAKE_CLASS_INVALID);
     }
     @And("Validate Post make class using invalid path with json schema validator")
     public void validatePostMakeClassUsingInvalidPathWithJsonSchemaValidator() {
-        File json = new File(Constants.JSON_SCHEMA_CLASS + "/PostMakeClassInvalidPathSchema.json");
-        SerenityRest.then().assertThat().body(JsonSchemaValidator.matchesJsonSchema(json));
+    File json = new File(Constants.JSON_SCHEMA_CLASS + "/PostMakeClassInvalidPathSchema.json");
+    SerenityRest.then().assertThat().body(JsonSchemaValidator.matchesJsonSchema(json));
     }
 
-    ///////////////////////////////////////////////////////////////////////////////////
-    @When("Post make class with incomplete request body")
+    @When("Post make class with empty request body")
     public void postMakeClassWithIncompleteRequestBody() {
-        File json = new File(Constants.REQ_BODY_CLASS + "/PostMakeClassWithIncompleteBody.json");
-        classAPI.setPostMakeClass(json);
+    File json = new File(Constants.REQ_BODY_CLASS + "/PostMakeClassWithEmptyBody.json");
+    classAPI.setPostMakeClass(json);
     }
 
-    @And("Send request body for create class with incomplete request body")
+    @And("Send request body for create class with empty request body")
     public void sendRequestBodyForCreateClassWithIncompleteRequestBody() {
-        SerenityRest.when().post(ClassAPI.POST_MAKE_CLASS);
+    SerenityRest.when().post(ClassAPI.POST_MAKE_CLASS);
     }
-    @And("Validate Post make class using invalid incomplete request body with json schema validator")
+    @And("Validate Post make class using empty request body with json schema validator")
     public void validatePostMakeClassUsingInvalidIncompleteRequestBodyWithJsonSchemaValidator() {
     File json = new File(Constants.JSON_SCHEMA_CLASS + "/PostMakeClassInvalidIncompleteBodySchema.json");
-     SerenityRest.then().assertThat().body(JsonSchemaValidator.matchesJsonSchema(json));
+    SerenityRest.then().assertThat().body(JsonSchemaValidator.matchesJsonSchema(json));
     }
-/////////////////////////////////////////////////////GET MENTOR CLASS////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////GET MENTOR CLASS
 
     @When("Get mentor class with valid path {}")
     public void getMentorClassWithValidPath(String id) {
-        classAPI.setGetClassMentor(id);
+    classAPI.setGetClassMentor(id);
     }
 
     @And("Send request GET for get mentor class")
     public void sendRequestGETForGetMentorClass() {
-        SerenityRest.when().get(ClassAPI.GET_MENTOR_CLASS);
+    SerenityRest.when().get(ClassAPI.GET_MENTOR_CLASS);
     }
 
     @And("Validate get mentor class with json schema validator")
     public void validateGetMentorClassWithJsonSchemaValidator() {
-        File json = new File(Constants.JSON_SCHEMA_CLASS + "/GetClassMentorSchema.json");
-        SerenityRest.then().assertThat().body(JsonSchemaValidator.matchesJsonSchema(json));
+    File json = new File(Constants.JSON_SCHEMA_CLASS + "/GetClassMentorSchema.json");
+    SerenityRest.then().assertThat().body(JsonSchemaValidator.matchesJsonSchema(json));
     }
-//////////////////////////////////////////////////////////////////////////////////////////////////////
+
     @When("Get mentor class with invalid path {}")
     public void getMentorClassWithInvalidPath(String id) {
-        classAPI.setGetClassMentor(id);
+    classAPI.setGetClassMentor(id);
     }
     @And("Validate get mentor class using invalid path with json schema validator")
     public void validateGetMentorClassUsingInvalidPathWithJsonSchemaValidator() {
-        File json = new File(Constants.JSON_SCHEMA_CLASS + "/GetMentorClassWithEmptyPathSchema.json");
-        SerenityRest.then().assertThat().body(JsonSchemaValidator.matchesJsonSchema(json));
+    File json = new File(Constants.JSON_SCHEMA_CLASS + "/GetMentorClassWithEmptyPathSchema.json");
+    SerenityRest.then().assertThat().body(JsonSchemaValidator.matchesJsonSchema(json));
     }
 
-    ///////////////////////////////////////////////////////////////////////////////////////////////////////////
     @When("Get mentor class with empty path")
     public void getMentorClassWithEmptyPath() {
-        classAPI.setGetClassMentorWithEmptyPath();
+    classAPI.setGetClassMentorWithEmptyPath();
     }
 
     @And("Send request GET for get mentor class with empty path")
     public void sendRequestGETForGetMentorClassWithEmptyPath() {
-        SerenityRest.when().get(ClassAPI.GET_MENTOR_CLASS_WITHOUT);
+    SerenityRest.when().get(ClassAPI.GET_MENTOR_CLASS_WITHOUT);
     }
     @And("Validate get mentor class using empty path with json schema validator")
     public void validateGetMentorClassUsingEmptyPathWithJsonSchemaValidator() {
+    File json = new File(Constants.JSON_SCHEMA_CLASS + "/GetMentorClassWithEmptyPathSchema.json");
+    SerenityRest.then().assertThat().body(JsonSchemaValidator.matchesJsonSchema(json));
     }
 
 
 
-    ///////////////////////////////////////////////////////GET ALL MENTOR CLASS///////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////GET ALL MENTOR CLASS
     @When("Get all mentor class with valid path {}")
     public void getAllMentorClassWithValidPath(String id) {
-        classAPI.setGetAllClassMentor(id);
+    classAPI.setGetAllClassMentor(id);
     }
 
     @And("Send request GET for get all mentor class")
     public void sendRequestGETForGetAllMentorClass() {
-        SerenityRest.when().get(ClassAPI.GET_MENTOR_ALL_CLASS);
+   SerenityRest.when().get(ClassAPI.GET_MENTOR_ALL_CLASS);
     }
-//////////////////////////////////////////////////////////////////////////////////////////////
+
 
     @When("Get all mentor class with invalid path {}")
     public void getAllMentorClassWithInvalidPath(String id) {
-        classAPI.setGetAllClassMentor(id);
+    classAPI.setGetAllClassMentor(id);
     }
     @And("Validate get all mentor class using invalid path with json schema validator")
     public void validateGetAllMentorClassUsingInvalidPathWithJsonSchemaValidator() {
-        File json = new File(Constants.JSON_SCHEMA_CLASS + "/GetAllMentorClassInvalidPathSchema.json");
-        SerenityRest.then().assertThat().body(JsonSchemaValidator.matchesJsonSchema(json));
+    File json = new File(Constants.JSON_SCHEMA_CLASS + "/GetAllMentorClassInvalidPathSchema.json");
+    SerenityRest.then().assertThat().body(JsonSchemaValidator.matchesJsonSchema(json));
     }
-///////////////////////////////////////////////////////////////////////////////////
+
     @When("Get all mentor class without path")
     public void getAllMentorClassWithoutPath() {
-        classAPI.setGetAllClassMentorWithoutPath();
+    classAPI.setGetAllClassMentorWithoutPath();
     }
 
     @And("Send request GET for get all mentor class without path")
     public void sendRequestGETForGetAllMentorClassWithoutPath() {
-        SerenityRest.when().get(ClassAPI.GET_MENTOR_ALL_CLASS_EMPTY);}
+     SerenityRest.when().get(ClassAPI.GET_MENTOR_ALL_CLASS_EMPTY);}
+
     @And("Validate get all mentor class without path with json schema validator")
     public void validateGetAllMentorClassWithoutPathWithJsonSchemaValidator() {
     File json = new File(Constants.JSON_SCHEMA_CLASS + "/GetAllMentorClassIWithoutPathSchema.json");
@@ -144,19 +145,18 @@ public class ClassStepDef {
         }
 
 
-
-
-///////////////////////////////////////////////PUT UPDATE CLASSS/////////////////////////////////////////
+///////////////////////////////////////////////PUT UPDATE CLASSS
 
     @When("Put update mentor class with valid request body using valid path {}")
     public void putUpdateMentorClassWithValidRequestBodyUsingValidPath(String id) {
-        File json = new File(Constants.REQ_BODY_CLASS + "/PutUpdateClassWithValidReqBody.json");
-        classAPI.setPutUpdateMentorClass(json,id);
+    File json = new File(Constants.REQ_BODY_CLASS + "/PutUpdateClassWithValidReqBody.json");
+    classAPI.setPutUpdateMentorClass(json,id);
     }
 
     @And("Send request put for update mentor class")
     public void sendRequestPutForUpdateMentorClass() {
-        SerenityRest.when().put(ClassAPI.PUT_UPDATE_MENTOR_CLASS);}
+    SerenityRest.when().put(ClassAPI.PUT_UPDATE_MENTOR_CLASS);}
+
     @And("Validate put update mentor class with json schema validator")
     public void validatePutUpdateMentorClassWithJsonSchemaValidator() {
     File json = new File(Constants.JSON_SCHEMA_CLASS + "/PutUpdateMentorClassSchema.json");
@@ -164,19 +164,17 @@ public class ClassStepDef {
         }
 
 
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////
     @When("Put update mentor class with invalid request body using valid path {}")
     public void putUpdateMentorClassWithInvalidRequestBodyUsingValidPath(String id) {
-        File json = new File(Constants.REQ_BODY_CLASS + "/PutUpdateClassWithInvalidReqBody.json");
-        classAPI.setPutUpdateMentorClass(json,id);
+    File json = new File(Constants.REQ_BODY_CLASS + "/PutUpdateClassWithInvalidReqBody.json");
+    classAPI.setPutUpdateMentorClass(json,id);
     }
     @And("Validate put update mentor class using invalid request body with json schema validator")
     public void validatePutUpdateMentorClassUsingInvalidRequestBodyWithJsonSchemaValidator() {
     File json = new File(Constants.JSON_SCHEMA_CLASS + "/PutUpdateMentorClassInvalidReqSchema.json");
     SerenityRest.then().assertThat().body(JsonSchemaValidator.matchesJsonSchema(json));
     }
-//////////////////////////////////////////////////////////////////////////////////////////
+
     @When("Put update mentor class with valid request body using invalid path {}")
     public void putUpdateMentorClassWithValidRequestBodyUsingInvalidPath(String id) {
     File json = new File(Constants.REQ_BODY_CLASS + "/PutUpdateClassWithValidReqBody.json");
@@ -188,8 +186,7 @@ public class ClassStepDef {
     SerenityRest.then().assertThat().body(JsonSchemaValidator.matchesJsonSchema(json));
     }
 
-
-    ///////////////////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////DELETE CLASS
     @When("Delete class mentor with valid path {}")
     public void deleteClassMentorWithValidPath(String id) {
         classAPI.setDeleteClass(id);
@@ -212,13 +209,9 @@ public class ClassStepDef {
 
     @And("Validate delete class using invalid path with json schema validator")
     public void validateDeleteClassUsingInvalidPathWithJsonSchemaValidator() {
-        File json = new File(Constants.JSON_SCHEMA_CLASS + "/DeleteMentorClassInvalidPathSchema.json");
-        SerenityRest.then().assertThat().body(JsonSchemaValidator.matchesJsonSchema(json));
+    File json = new File(Constants.JSON_SCHEMA_CLASS + "/DeleteMentorClassInvalidPathSchema.json");
+    SerenityRest.then().assertThat().body(JsonSchemaValidator.matchesJsonSchema(json));
     }
-
-
-
-/////////////////////////////////////////////////////////////////////////////////
 
 
 }

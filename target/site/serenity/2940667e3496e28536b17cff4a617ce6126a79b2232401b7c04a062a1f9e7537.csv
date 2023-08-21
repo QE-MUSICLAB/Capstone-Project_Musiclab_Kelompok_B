@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Put Edit Password Mentor","Put edit mentor password with invalid request body","SUCCESS","2023-08-20T22:25:44.6200177+07:00[Asia/Jakarta]","0.0","1.73"
+"Put Edit Password Mentor","Put edit mentor password with empty old password","SUCCESS","2023-08-20T22:25:46.3549864+07:00[Asia/Jakarta]","0.0","1.72"
+"Put Edit Password Mentor","Put edit mentor password with empty new old password","SUCCESS","2023-08-20T22:25:48.0867908+07:00[Asia/Jakarta]","0.0","1.73"
+"Put Edit Password Mentor","Put edit mentor password with empty confirmation old password","SUCCESS","2023-08-20T22:25:49.8278794+07:00[Asia/Jakarta]","0.0","1.76"
+"Put Edit Password Mentor","Put edit mentor password with all empty value of password","SUCCESS","2023-08-20T22:25:51.5966805+07:00[Asia/Jakarta]","0.0","1.72"

@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: Post Register Student and Mentor
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 3.353 s <<< FAILURE! - in Post Register Student and Mentor
+Post Register Student and Mentor.Register new student with valid data  Time elapsed: 0.619 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <201> but was <400>.
+
+
+Post Register Student and Mentor.Register new mentor with valid data  Time elapsed: 0.58 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <201> but was <400>.
+
+

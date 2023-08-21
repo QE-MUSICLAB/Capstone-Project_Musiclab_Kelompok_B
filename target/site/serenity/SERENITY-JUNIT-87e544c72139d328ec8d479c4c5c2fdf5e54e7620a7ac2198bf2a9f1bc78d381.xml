@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Get mentor top week" skipped="0" tests="2" time="0.5" timestamp="2023-08-18 03:17:58"><testcase name="Get mentor top week with valid path"/><testcase name="Get mentor top week with invalid path"/></testsuite>

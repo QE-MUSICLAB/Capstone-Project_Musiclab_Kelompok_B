@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: Get All Mentor Class
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 5.772 s <<< FAILURE! - in Get All Mentor Class
+Get All Mentor Class.Get all mentor class with valid path  Time elapsed: 2.254 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <201>.
+
+

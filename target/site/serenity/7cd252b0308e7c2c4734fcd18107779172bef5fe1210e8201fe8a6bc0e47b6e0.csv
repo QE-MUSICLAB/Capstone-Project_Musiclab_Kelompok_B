@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Get All Mentor","Get all mentor with invalid path","SUCCESS","2023-08-20T22:25:22.6720838+07:00[Asia/Jakarta]","0.0","0.11"
+"Get All Mentor","Get all mentor Get all mentor without path","SUCCESS","2023-08-20T22:25:22.7891694+07:00[Asia/Jakarta]","0.0","0.09"
+"Get Review Mentor","Get mentor review with empty path","SUCCESS","2023-08-20T22:26:08.8708169+07:00[Asia/Jakarta]","0.0","7.75"

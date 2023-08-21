@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Get Review Mentor","Get mentor review with valid path","SUCCESS","2023-08-20T22:25:59.4030689+07:00[Asia/Jakarta]","0.0","9.46"
+"Get Review Mentor","Get mentor review with empty path","SUCCESS","2023-08-20T22:26:08.8708169+07:00[Asia/Jakarta]","0.0","7.75"
+"Post Create Review Mentor","Post make review class with valid request body using valid path {id}","SUCCESS","2023-08-20T22:26:16.6374629+07:00[Asia/Jakarta]","0.0","8.47"
+"Post Create Review Mentor","Post make review class with invalid request body using invalid path {id}","SUCCESS","2023-08-20T22:26:25.1156018+07:00[Asia/Jakarta]","0.0","5.32"
+"Post Create Review Mentor","Post make review class with empty request body using valid path {id}","SUCCESS","2023-08-20T22:26:30.4452342+07:00[Asia/Jakarta]","0.0","8.77"

@@ -1,0 +1,7 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Post Register Student and Mentor","Register new mentor with valid data","FAILURE","2023-08-20T22:24:49.664197+07:00[Asia/Jakarta]","0.0","0.57"
+"Post Register Student and Mentor","Register new mentor with invalid data","SUCCESS","2023-08-20T22:24:50.2365102+07:00[Asia/Jakarta]","0.0","0.1"
+"Post Register Student and Mentor","Register new mentor without data","SUCCESS","2023-08-20T22:24:50.341265+07:00[Asia/Jakarta]","0.0","0.1"
+"Post Register Student and Mentor","Register new mentor with invalid path","SUCCESS","2023-08-20T22:24:50.4467776+07:00[Asia/Jakarta]","0.0","0.1"
+"Post Register Student and Mentor","Register new Mentor with incomplete data","SUCCESS","2023-08-20T22:24:50.5519243+07:00[Asia/Jakarta]","0.0","0.11"
+"Post Register Student and Mentor","Register new Mentor with data has been used","SUCCESS","2023-08-20T22:24:50.6772869+07:00[Asia/Jakarta]","0.0","0.52"

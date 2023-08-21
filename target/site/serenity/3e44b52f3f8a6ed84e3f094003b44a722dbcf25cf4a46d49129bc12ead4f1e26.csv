@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Post Login Student and Mentor","Login student with valid data","SUCCESS","2023-08-20T22:24:39.3273993+07:00[Asia/Jakarta]","0.0","4.84"
+"Post Login Student and Mentor","Login Mentor with valid data","SUCCESS","2023-08-20T22:24:45.1923613+07:00[Asia/Jakarta]","0.0","1.7"
+"Post Register Student and Mentor","Register new student with valid data","FAILURE","2023-08-20T22:24:47.8749542+07:00[Asia/Jakarta]","0.0","0.65"
+"Post Register Student and Mentor","Register new mentor with valid data","FAILURE","2023-08-20T22:24:49.664197+07:00[Asia/Jakarta]","0.0","0.57"
