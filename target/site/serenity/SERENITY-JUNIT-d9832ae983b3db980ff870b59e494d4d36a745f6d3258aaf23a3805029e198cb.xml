@@ -1,1 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Get mentor profile by id" skipped="0" tests="3" time="2.06" timestamp="2023-08-18 03:17:56"><testcase name="Get mentor profile with valid path"/><testcase name="Get mentor profile with invalid id path special character"/><testcase name="Get mentor profile with unavailable path"/></testsuite>

@@ -1,3 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Get Mentor profile","Get mentor profile with valid path","SUCCESS","2023-08-20T22:25:22.9069148+07:00[Asia/Jakarta]","0.0","2.62"
-"Get Mentor profile","Get mentor profile with invalid path","SUCCESS","2023-08-20T22:25:25.5311274+07:00[Asia/Jakarta]","0.0","1.83"

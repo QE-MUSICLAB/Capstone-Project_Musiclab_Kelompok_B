@@ -1,1 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Get All Mentor" skipped="0" tests="3" time="0.6" timestamp="2023-08-18 03:17:51"><testcase name="Get all mentor with valid path"/><testcase name="Get all mentor with invalid path"/><testcase name="Get all mentor Get all mentor without path"/></testsuite>

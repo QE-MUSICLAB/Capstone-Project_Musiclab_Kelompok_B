@@ -1,7 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Post Login Student and Mentor","Login student with valid data","SUCCESS","2023-08-20T22:24:39.3273993+07:00[Asia/Jakarta]","0.0","4.84"
-"Post Login Student and Mentor","Login student with invalid data using unregistered student","SUCCESS","2023-08-20T22:24:44.1857013+07:00[Asia/Jakarta]","0.0","0.55"
-"Post Login Student and Mentor","Login student without request body","SUCCESS","2023-08-20T22:24:44.7541951+07:00[Asia/Jakarta]","0.0","0.13"
-"Post Login Student and Mentor","Login student with invalid path","SUCCESS","2023-08-20T22:24:44.8981322+07:00[Asia/Jakarta]","0.0","0.14"
-"Post Login Student and Mentor","Login student with incomplete data","SUCCESS","2023-08-20T22:24:45.0449414+07:00[Asia/Jakarta]","0.0","0.13"
-"Post Login Student and Mentor","Login mentor with incomplete data","SUCCESS","2023-08-20T22:24:47.725686+07:00[Asia/Jakarta]","0.0","0.12"

@@ -27,7 +27,7 @@
               "type": "string"
             },
             "rating": {
-              "type": "number"
+              "type": "integer"
             }
           },
           "required": [
@@ -62,7 +62,7 @@
               "type": "string"
             },
             "rating": {
-              "type": "integer"
+              "type": "number"
             }
           },
           "required": [

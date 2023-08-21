@@ -1,8 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Delete Mentor Class","Delete class mentor with valid path","FAILURE","2023-08-20T22:24:51.2117969+07:00[Asia/Jakarta]","0.0","2.6"
-"Get All Mentor Class","Get all mentor class with valid path","FAILURE","2023-08-20T22:24:55.5827687+07:00[Asia/Jakarta]","0.0","2.25"
-"Get Mentor Class","Get mentor class with valid path","FAILURE","2023-08-20T22:25:01.3583407+07:00[Asia/Jakarta]","0.0","2.17"
-"Post Make Class","Post make class with valid request body","SUCCESS","2023-08-20T22:25:07.4727891+07:00[Asia/Jakarta]","0.0","2.57"
-"Put Update Mentor Class","Put update mentor class with valid request body","SUCCESS","2023-08-20T22:25:14.4188177+07:00[Asia/Jakarta]","0.0","2.56"
-"Put Update Mentor Class","Put update mentor class with invalid request body","SUCCESS","2023-08-20T22:25:16.9917226+07:00[Asia/Jakarta]","0.0","1.75"
-"Put Update Mentor Class","Put update mentor class with invalid path","SUCCESS","2023-08-20T22:25:18.7487814+07:00[Asia/Jakarta]","0.0","1.78"

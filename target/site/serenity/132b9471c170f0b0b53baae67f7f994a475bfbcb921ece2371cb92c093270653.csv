@@ -1,3 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Put Edit Profile Mentor","Put Update mentor profile with invalid request body","SUCCESS","2023-08-20T22:25:55.9226265+07:00[Asia/Jakarta]","0.0","1.71"
-"Put Edit Profile Mentor","Put Update mentor profile with empty value body","SUCCESS","2023-08-20T22:25:57.6455461+07:00[Asia/Jakarta]","0.0","1.74"

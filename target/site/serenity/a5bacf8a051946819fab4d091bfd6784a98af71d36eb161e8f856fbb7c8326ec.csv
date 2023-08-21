@@ -1,4 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Get Mentor Class","Get mentor class with valid path","FAILURE","2023-08-20T22:25:01.3583407+07:00[Asia/Jakarta]","0.0","2.17"
-"Get Mentor Class","Get mentor class with invalid path","SUCCESS","2023-08-20T22:25:03.5354613+07:00[Asia/Jakarta]","0.0","2.17"
-"Get Mentor Class","Get mentor class with empty path","SUCCESS","2023-08-20T22:25:05.7200075+07:00[Asia/Jakarta]","0.0","1.74"

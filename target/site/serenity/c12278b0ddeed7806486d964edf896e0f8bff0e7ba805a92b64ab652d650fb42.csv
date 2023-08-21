@@ -1,6 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Post Create Credentials","Post create Credentials with valid request body","FAILURE","2023-08-20T22:25:29.8201575+07:00[Asia/Jakarta]","0.0","1.84"
-"Post Create Credentials","Post create Credentials with invalid request body","SUCCESS","2023-08-20T22:25:31.6740121+07:00[Asia/Jakarta]","0.0","1.82"
-"Post Create Credentials","Post create Credentials with empty type","SUCCESS","2023-08-20T22:25:33.5050102+07:00[Asia/Jakarta]","0.0","1.77"
-"Post Create Credentials","Post create Credentials with empty name","SUCCESS","2023-08-20T22:25:35.2861848+07:00[Asia/Jakarta]","0.0","1.8"
-"Post Create Credentials","Post create Credentials with empty type and empty name","SUCCESS","2023-08-20T22:25:37.100136+07:00[Asia/Jakarta]","0.0","1.82"

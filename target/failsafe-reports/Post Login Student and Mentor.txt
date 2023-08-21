@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: Post Login Student and Mentor
--------------------------------------------------------------------------------
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.831 s - in Post Login Student and Mentor
