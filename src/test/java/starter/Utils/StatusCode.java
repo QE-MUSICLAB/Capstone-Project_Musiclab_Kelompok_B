@@ -1,5 +1,4 @@
 package starter.Utils;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import net.serenitybdd.rest.SerenityRest;
 
@@ -20,20 +19,19 @@ public class StatusCode {
     @Then("Status code is {int} No Content")
     public void statusCodeIsNoContent(int NoContent) {
         SerenityRest.then().statusCode(NoContent);
+    }
 
+    @Then("Status code should be {int} Method Not Allowed")
+    public void statusCodeShouldBeMethodNotAllowed(int NotAllowed) {
+        SerenityRest.then().statusCode(NotAllowed);
     }
     @Then("Status code should be {int} Created")
-    public void statusCodeShouldBeCreated(int created) {
-        SerenityRest.then().statusCode(created);
+    public void statusCodeshouldbeCreated(int Created){
+        SerenityRest.then().statusCode(Created);
     }
 
-
-    @Then("Status code should be {int} Method not allowed")
-    public void statusCodeShouldBeMethodNotAllowed(int MethodNotAllowed) {
-        SerenityRest.then().statusCode(MethodNotAllowed);
-    }
-    @Then("Status code should be {int} Internal server error")
-    public void statusCodeShouldBeInternalServerError(int InternalServerError) {
-        SerenityRest.then().statusCode(InternalServerError);
+    @Then("Status code should be {int} Internal Server Error")
+    public void statusCodeShouldBeInternalServerError(int error) {
+        SerenityRest.then().statusCode(error);
     }
 }

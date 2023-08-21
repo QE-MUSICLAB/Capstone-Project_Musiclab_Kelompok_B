@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="POST genres" skipped="0" tests="2" time="4.84" timestamp="2023-08-16 06:46:38"><testcase name="POST mentor genress with valid request body"/><testcase name="POST mentor genress with invalid request body"/></testsuite>
