@@ -19,15 +19,19 @@ public class StatusCode {
     @Then("Status code is {int} No Content")
     public void statusCodeIsNoContent(int NoContent) {
         SerenityRest.then().statusCode(NoContent);
-
     }
+
     @Then("Status code should be {int} Method Not Allowed")
     public void statusCodeShouldBeMethodNotAllowed(int NotAllowed) {
         SerenityRest.then().statusCode(NotAllowed);
     }
-    @Then("Status code should be {int} Created status")
-    public void statusCodeshouldbeCreatedStatus(int Created){
+    @Then("Status code should be {int} Created")
+    public void statusCodeshouldbeCreated(int Created){
         SerenityRest.then().statusCode(Created);
     }
 
+    @Then("Status code should be {int} Internal Server Error")
+    public void statusCodeShouldBeInternalServerError(int error) {
+        SerenityRest.then().statusCode(error);
+    }
 }
