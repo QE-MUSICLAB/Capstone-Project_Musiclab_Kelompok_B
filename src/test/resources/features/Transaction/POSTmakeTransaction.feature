@@ -33,7 +33,7 @@ Feature: POST make transaction mentor and student
     When Post make transaction with invalid start date request body
     And send request body for transaction invalid start date
     Then Status code should be 400 Bad Request
-    And Validate response body message make transaction "minimum start date input is today"
+    And Validate response body message make transaction "input format incorrect"
     And Validate JSON Schema make transaction invalid start date
 
   @Musiclab @NegativeCase @PostALL @Student @Transaction

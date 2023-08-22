@@ -14,7 +14,7 @@ Feature: Post Make Class
     Given User login mentor with account
     When  Post make class with valid request body using invalid path
     And   Send request body for create class using invalid path
-    Then  Status code should be 405 Method not allowed
+    Then  Status code should be 405 Method Not Allowed
     And   Validate Post make class using invalid path with json schema validator
 
 
@@ -23,7 +23,7 @@ Feature: Post Make Class
     Given User login mentor with account
     When  Post make class with empty request body
     And   Send request body for create class with empty request body
-    Then  Status code should be 500 Internal server error
+    Then  Status code should be 500 Internal Server Error
     And   Validate Post make class using empty request body with json schema validator
 
 

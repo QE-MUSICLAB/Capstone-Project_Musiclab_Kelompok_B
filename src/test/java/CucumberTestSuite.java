@@ -4,7 +4,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        tags = "@Login",
+        tags = "@Musiclab",
         plugin = {"pretty"},
         features = "classpath:features"
 )
