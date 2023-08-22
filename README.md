@@ -24,19 +24,19 @@
 
 
 #### Summary Report
-![report-api-summary]
+![report-api-summary](https://github.com/QE-MUSICLAB/Capstone-Project_Musiclab_Kelompok_B/blob/main/src/Report%20Picture/conver.png)
 
 #### Coverage Report
-![report-api-cpverage]
+![report-api-cpverage](https://github.com/QE-MUSICLAB/Capstone-Project_Musiclab_Kelompok_B/blob/main/src/Report%20Picture/hasil.png)
 
 #### Test Documentation Spreadsheet
-![report-api-chats]
+![report-api-chats] (https://github.com/QE-MUSICLAB/Capstone-Project_Musiclab_Kelompok_B/blob/main/src/Report%20Picture/spread.png)
 
 #### Automation Testing When Run in Intellij IDE
-![report-api-runningtest]
+![report-api-runningtest](https://github.com/QE-MUSICLAB/Capstone-Project_Musiclab_Kelompok_B/blob/main/src/Report%20Picture/Screenshot%20(1037)%20(1).png)
 
 #### Manual Testing When Run in Postman
-![report-api-runningtest](https://github.com/ProjectBengcall/API-Testing/blob/master/img/test%20runing%20snippet%20on%20postman.png)
+![report-api-runningtest](https://github.com/QE-MUSICLAB/Capstone-Project_Musiclab_Kelompok_B/blob/main/src/Report%20Picture/postman.png)
 
 ## 🛠 Tools
 **Manual:**
