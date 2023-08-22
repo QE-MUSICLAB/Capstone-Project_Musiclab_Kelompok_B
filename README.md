@@ -33,7 +33,7 @@
 ![report-api-chats](https://github.com/QE-MUSICLAB/Capstone-Project_Musiclab_Kelompok_B/blob/main/src/Report%20Picture/spread.png)
 
 #### Automation Testing When Run in Intellij IDE
-![report-api-runningtest](https://github.com/QE-MUSICLAB/Capstone-Project_Musiclab_Kelompok_B/blob/main/src/Report%20Picture/Screenshot%20(1037)%20(1).png)
+![report-api-runningtest](https://github.com/QE-MUSICLAB/Capstone-Project_Musiclab_Kelompok_B/blob/main/src/Report%20Picture/Run%20Intelij.png)
 
 #### Manual Testing When Run in Postman
 ![report-api-runningtest](https://github.com/QE-MUSICLAB/Capstone-Project_Musiclab_Kelompok_B/blob/main/src/Report%20Picture/postman.png)
