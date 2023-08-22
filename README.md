@@ -15,7 +15,7 @@
 
 ## 📑 API Testing- Musiclab
 
-<p align="justify">This project was created to complete a Capstone project in the Batch 11 Quality Assurance class at the Alterra Academy Immersive Program. At this project, we perform an API Automation Testing for 10 resources or end points (Auth, Class, Schedule, Transaction, Mentor, Review, Chat, Student, Instrument, Genre).</p>
+<p align="justify">This project was created to complete a Capstone project in the Batch 11 Quality Assurance class at the Alterra Academy Immersive Program. At this project, we perform an API Automation Testing for 10 resources or end points (Auth, Mentor, Review, Class, Student, Genre, Transaction, Instrument, Chat, Schedule).</p>
 
 ## 📓 Testing Documentation
 [Test Case API](https://docs.google.com/spreadsheets/d/185Qn1yxGnA07ykqQgy-a-yg5tzb96CdhEZV-e_JqXsQ/edit#gid=0)
