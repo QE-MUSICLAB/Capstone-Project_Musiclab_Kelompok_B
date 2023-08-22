@@ -54,6 +54,9 @@
 **Test Case Management:**  
 
 ![Google Sheets](https://img.shields.io/badge/-Google%20sheets-4bc47b?style=for-the-badge&logoColor=black)
+
+**Project Management:** 
+
 [![Trello](https://img.shields.io/badge/Trello-%23026AA7.svg?style=for-the-badge&logo=Trello&logoColor=white)](https://trello.com/b/x4mtkPka/cookit)
 
 **Communication:**  
