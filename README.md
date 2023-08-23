@@ -24,7 +24,7 @@
 
 
 #### Summary Report
-![report-api-summary](https://github.com/QE-MUSICLAB/Capstone-Project_Musiclab_Kelompok_B/blob/main/src/Report%20Picture/conver.png)
+![report-api-summary](https://github.com/QE-MUSICLAB/Kelompok_B_API_Testing_Musiclab/blob/main/src/Report%20Picture/Screenshot%20(1088).png)
 
 #### Coverage Report
 ![report-api-cpverage](https://github.com/QE-MUSICLAB/Capstone-Project_Musiclab_Kelompok_B/blob/main/src/Report%20Picture/hasil.png)
