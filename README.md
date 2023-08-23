@@ -36,7 +36,7 @@
 ![report-api-runningtest](https://github.com/QE-MUSICLAB/Capstone-Project_Musiclab_Kelompok_B/blob/main/src/Report%20Picture/Run%20Intelij.png)
 
 #### Manual Testing When Run in Postman
-![report-api-runningtest](https://github.com/QE-MUSICLAB/Capstone-Project_Musiclab_Kelompok_B/blob/main/src/Report%20Picture/postman.png)
+![report-api-runningtest](https://github.com/QE-MUSICLAB/Kelompok_B_API_Testing_Musiclab/blob/main/src/Report%20Picture/Screenshot%20(1096).png)
 
 ## 🛠 Tools
 **Manual:**
