@@ -41,7 +41,7 @@
 ## 🛠 Tools
 **Manual:**
 
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+[![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)](https://speeding-water-672880.postman.co/workspace/2c6778d0-1c59-48ac-b2db-9b674c8cd87b)
 
 **Automation:**  
 ![IntellijIDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
@@ -57,7 +57,7 @@
 
 **Project Management:** 
 
-[![Trello](https://img.shields.io/badge/Trello-%23026AA7.svg?style=for-the-badge&logo=Trello&logoColor=white)](https://trello.com/b/x4mtkPka/cookit)
+[![Trello](https://img.shields.io/badge/Trello-%23026AA7.svg?style=for-the-badge&logo=Trello&logoColor=white)](https://trello.com/invite/b/PLgk5MG0/ATTI978b54397daf73e26b67a9b4210319f00F621993/captsone-project-musiclab-kelompok-4)
 
 **Communication:**  
 
