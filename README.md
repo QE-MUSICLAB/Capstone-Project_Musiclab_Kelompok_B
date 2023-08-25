@@ -30,7 +30,7 @@
 ![report-api-cpverage](https://github.com/QE-MUSICLAB/Capstone-Project_Musiclab_Kelompok_B/blob/main/src/Report%20Picture/hasil.png)
 
 #### Test Documentation Spreadsheet
-![report-api-chats](https://github.com/QE-MUSICLAB/Capstone-Project_Musiclab_Kelompok_B/blob/main/src/Report%20Picture/spread.png)
+![report-api-chats](https://github.com/QE-MUSICLAB/Kelompok_B_API_Testing_Musiclab/blob/main/src/Report%20Picture/manual%20result.png)
 
 #### Automation Testing When Run in Intellij IDE
 ![report-api-runningtest](https://github.com/QE-MUSICLAB/Capstone-Project_Musiclab_Kelompok_B/blob/main/src/Report%20Picture/Run%20Intelij.png)
